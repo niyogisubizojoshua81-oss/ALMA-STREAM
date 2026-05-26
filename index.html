@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMA Stream - Premium Entertainment</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <header class="app-header">
+        <div class="brand">ALMA<span>.</span></div>
+        <div class="search-box">
+            <input type="text" id="movieSearch" placeholder="Search movies, translated series, VJs...">
+        </div>
+        <div class="admin-badge" id="adminIndicator" title="System Administrator Account">
+            <span>Guest Mode</span>
+        </div>
+    </header> 
+
+    <main class="dashboard-layout">
+        
+        <section class="theatre-zone">
+            <div class="player-viewport">
+                <div class="ad-overlay" id="adNotice">📢 Ad Playing: Real Movie Unlocks Shortly...</div>
+                
+                <video id="almaEngine" playsinline controls>
+                    <source src="" type="video/mp4" />
+                </video>
+            </div>
+            <div class="stream-details">
+                <h1 id="activeTitle">Welcome to ALMA Stream</h1>
+                <p id="activeDescription">Select a title from the curated channels below to instantly spin up high-definition streaming links served directly via cloud configurations.</p>
+            </div>
+        </section> 
+
+        <section class="content-hub">
+            <div class="category-lane">
+                <h2>Trending Releases</h2>
+                <div class="shelf-grid" id="trendingShelf"></div>
+            </div> 
+
+            <div class="category-lane">
+                <h2>VJ Translated Series & Shows</h2>
+                <div class="shelf-grid" id="vjShelf"></div>
+            </div>
+        </section> 
+
+    </main> 
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
